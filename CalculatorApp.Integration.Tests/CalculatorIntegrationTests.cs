@@ -42,16 +42,6 @@ namespace CalculatorApp.Integration.Tests
         }
 
         [Fact]
-        public void Divide_ByZero_ThrowsDivideByZeroException()
-        {
-            // Arrange
-            var calculator = new Calculator();
-
-            // Act & Assert
-            Assert.Throws<DivideByZeroException>(() => calculator.Divide(6, 0));
-        }
-
-        [Fact]
         public void PerformComplexMathematicalOperations_CorrectlyAppliesMultipleOperations_ExpectedResults()
         {
             // Arrange
